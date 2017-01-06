@@ -1,0 +1,1 @@
+*/30 * * * * (killall -9 nethogs && /usr/local/sbin/nethogs -v kbps -b  | sed 's/[^[:print:][:cntrl:]]//g' > /home/zabbix/zabbix_agent/output.txt) || (/usr/local/sbin/nethogs -v kbps -b  | sed 's/[^[:print:][:cntrl:]]//g' > /home/zabbix/zabbix_agent/output.txt)
